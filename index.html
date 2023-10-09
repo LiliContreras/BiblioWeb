@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiblioWeb</title>
+    <!-- Conexión con CSS - hoja de estilos -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header id="Inicio">
+        <nav>
+            <div class="main-menu">
+                <div class="top-menu-left">
+                    <ul class="logo-name">
+                        <li>
+                            <img src="css/LogoBiblioWeb.png" alt="Logo de BiblioWeb, Libro taza de café">
+                        </li>
+                        <li>
+                            <p>BiblioWeb</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-menu-rigth">
+                    <ul class="menu">
+                        <li>
+                            <a href="#Inicio">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#Recomendaciones">Recomendaciones</a>
+                        </li>
+                        <li>
+                            <a href="#Categorias">Categorías</a>
+                        </li>
+                        <li>
+                            <a href="#BiblioEditores">BiblioEditores</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+        </nav>
+    </header>
+
+   
+    <main>
+         <!--RECOMENDACIONES-->
+        <section class="Recomendaciones">
+            <h1 id="Recomendaciones">Recomendaciones del mes</h1>
+            <div class="Opciones">
+                <ul class="Libros">
+                    <li>
+                        <a href="https://www.gandhi.com.mx/fausto"><img src="https://www.gandhi.com.mx/media/catalog/product/9/7/9786073158848_f638.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=478&width=300&canvas=300:478" alt="Portada de libro Fausto de Goethe, se observa a Fausto siendo manipulado por Mefistofeles"></a>
+                    </li>
+                    <li>
+                        <a href="https://pendulo.com/libro/casa-de-munecas_366595"><img src="https://pendulo.com/imagenes/9788416/978841677510.GIF" alt="Portada de libro Casa de Muñecas de Henrik Ibsen, se observa a Nora recostada en un sofá"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.gandhi.com.mx/el-extranjero-3"><img src="https://www.gandhi.com.mx/media/catalog/product/9/7/9786074537246_de49.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=478&width=300&canvas=300:478" alt="Portada de libro El Extranjero de Albert Camus, se presenta un revolver y un sombrero que representan al personaje principal"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--CATEGORÍAS-->
+        <section class="Categorias">
+            <h1 id="Categorias"> Categorías</h1>
+            <div class="Disponibles">
+                <ul class="Reseñas">
+                    <li>
+                        <div class="ContenedorTerror">
+                            <a href="#Terror"><img src="https://i.pinimg.com/564x/6b/5f/8b/6b5f8ba83da5266336e66a7a62c72d28.jpg" alt="Libros de terror, representado por una casa embrujada" class="Terrorimg" style="width: 100%;"></a>
+                            <div class="middleTerror">
+                                <div class="textTerror">Terror</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ContenedorFantasia">
+                            <a href="#Fantasia"><img src="https://i.pinimg.com/564x/00/94/34/009434d38ad3e47ab3cda8fdb9ac6a4d.jpg" alt="Libros de fantasia, representado por ranitas bailando" class="Fantasiaimg" style="width: 100%;"></a>
+                            <div class="middleFantasia">
+                                <div class="textFantasia">Fantasia</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ContenedorMisterio">
+                            <a href="#Misterio"><img src="https://i.pinimg.com/236x/7e/7b/b5/7e7bb5b663ab259ba339e97e0a7c6d96.jpg" alt="Libros de misterio, representado por investigación de Sherlock" class="Misterioimg" style="width: 100%;"></a>
+                            <div class="middleMisterio">
+                                <div class="textMisterio">Misterio</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ContenedorSciFi">
+                            <a href="#SciFi"><img src="https://i.pinimg.com/236x/24/58/5b/24585ba7c5be9e6b1ebaefa627c90bdb.jpg" alt="Libros de Ciencia Ficción, representado por paisaje galáctico" class="SciFiimg" style="width: 100%;"></a>
+                            <div class="middleSciFi">
+                                <div class="textSciFi">SciFi</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ContenedorTeatro">
+                            <a href="#Teatro"><img src="https://i.pinimg.com/564x/f3/e4/aa/f3e4aa809246d9d5f7637bf312985c22.jpg" alt="Libros de teatro, representado por boletos de teatro" class="Teatroimg" style="width: 100%;"></a>
+                            <div class="middleTeatro">
+                                <div class="textTeatro">Teatro</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--FRASE DEL MES-->
+        <section class="Frase">
+            <h1>Frase del mes</h1>
+            <div class="Frase-mes">
+                <p>"No soy un pájaro y ninguna red me atrapa. Soy un ser humano libre con una voluntad independiente". Jane Eyre, Charlotte Brontë</p>
+            </div>
+        </section>
+        <!--RESEÑAS-->
+        <section class="Reseñas">
+            <section class="ReseñasTerror">
+                <h1 id="Terror">Reseñas de Terror</h1>
+                <div class="ContenedorMonje">
+                    <div class="imagenMonje">
+                        <a href="https://www.amazon.com.mx/El-Monje-Matthew-G-Lewis/dp/8477026858/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=&sr="><img src="https://m.media-amazon.com/images/I/71dxXQXTh3L._SY425_.jpg" alt="Portada del libro El Monje, se observa al monje Ambrosio firmando un contrato diabólico"></a>
+                    </div>
+                    <div class="TituloMonje">
+                        <h1>El Monje, Matthew G Lewis</h1>
+                    </div>
+                    <div class="TextoMonje">
+                        <p>
+                            El Monje, de Matthew G. Lewis, libro terrible y una de las cimas de la novela gótica, vio la luz en marzo de 1796, y despertó inmediatamente el interés y el asombro de la crítica y el público. Hoy, doscientos años más tarde, el poder hipnótico de su prosa y el veneno moral que destilan sus páginas sigue despertando el asombro de las generaciones de lectores que gustan del terror clásico. Ya desde su aparición, la obra fue tachada y condenada por impía, libertina, atea y corrompida. H. P. Lovecraft, maestro de ceremonias de la literatura macabra, la considera «una obra maestra de verdadera pesadilla cuyos elementos generales de corte gótico están condimentados con un cúmulo de rasgos macabros». La novela nos presenta a un monje español, llamado Ambrosio, quien de un estado profundamente virtuoso pasa a ser tentado por el demonio bajo la apariencia de la doncella Matilde. Finalmente, Ambrosio es condenado a morir en manos de la Inquisición.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ContenedorFrankenstein">
+                    <div class="imagenFrankenstein">
+                        <a href="https://www.amazon.com.mx/Frankenstein-Mary-Selly-ebook/dp/B0CGFC55W6/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr="><img src="https://m.media-amazon.com/images/I/813doVOXEYL._SY425_.jpg" alt="Portada del libro Frankenstein, se observa al Dr. Frankenstein y la sombra de su creación"></a>
+                    </div>
+                    <div class="TituloFrankenstein">
+                        <h1>Frankenstein, Mary Shelley</h1>
+                    </div>
+                    <div class="TextoFrankenstein">
+                        <p>
+                            Durante el lluvioso verano de 1816, cuatro de los escritores ingleses más talentosos de su tiempo se dieron cita en Villa Diodati. La mansión a orillas del lago Ginebra fue el escenario en que Lord Byron, John Polidori, Percy Bysshe Shelley y Mary Shelley se retaron a escribir una historia de terror. Aquel juego llevó a la autora londinense a crear Frankenstein, una de las grandes cimas del horror gótico y una brillante reflexión sobre la ética científica. La novela narra el intento de un joven estudiante de medicina de crear vida artificial y las terribles consecuencias de su experimento.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ReseñasFantasia">
+                <h1 id="Fantasia">Reseñas de Fantasía</h1>
+                <div class="ContenedorHobbit">
+                    <div class="imagenHobbit">
+                        <a href="https://www.amazon.com.mx/El-Monje-Matthew-G-Lewis/dp/8477026858/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=&sr="><img src="https://books.google.com.mx/books/content?id=xi2URRig7jYC&hl=es&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U1wnBD2F9rEpMP3BAF8zPO8y3hnqw&w=1280" alt="Portada del libro El Hobbit, se observa al dragón Smaug durmiendo sobre su tesoro"></a>
+                    </div>
+                    <div class="TituloHobbit">
+                        <h1>El Hobbit, J.R.R. Tolkien</h1>
+                    </div>
+                    <div class="TextoHobbit">
+                        <p>
+                            Smaug parecía profundamente dormido cuando espió una vez más la entrada. ¡Pero fingía estar dormido! ¡Estaba vigilando la entrada del túnel! Sacado de su cómodo agujero hobbot por Gandalf y una banda de enanos, Bilbo se encuentra de pronto en medio de una conspiración que pretende apoderarse del tesoro de Smaug el Magnífico, un enorme y muy peligroso dragón... «Todos los que aman esos libros para niños que pueden ser leídos y releídos por adultos han de tomar buena cuenta de que una nueva estrella ha aparecido en esa constelación.» C.S. Lewis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ContenedorSinFin">
+                    <div class="imagenSinFin">
+                        <a href="https://www.amazon.com.mx/historia-interminable-Michael-Ende/dp/6073135610"><img src="https://m.media-amazon.com/images/I/410hy7z5plL._SY445_SX342_.jpg" alt="Portada del libro La historia Interminable, se observan a los personajes involucrados"></a>
+                    </div>
+                    <div class="TituloSinFin">
+                        <h1>La historia interminable , Michael Ende</h1>
+                    </div>
+                    <div class="TextoSinFin">
+                        <p>
+                            La historia interminable, un clásico de la literatura infantil, es un libro inolvidable para disfrutar, compartir y dejar volar la imaginación. Su autor, Michael Ende, figura en la Lista de Honor del IBBY desde el año 1974. Luego de que Bastian Baltasar Bux roba un libro y descubre que sus páginas hablan de él, se siente absorbido por su trama de incontables aventuras en un reino mágico llamado Fantasía... La Emperatriz Infantil está mortalmente enferma y su reino, Fantasía, corre un grave peligro. La salvación depende de Atreyu, un valiente guerrero de la tribu de los pieles verdes, y Bastian, un niño tímido que lee con pasión un libro mágico. Sólo un ser humano puede salvar este lugar encantado. Juntos emprenderán un fascinante viaje a través de tierras de dragones, gigantes, monstruos y magia que no tiene vuelta atrás. A medida que se adentra en Fantasía, Bastian deberá resolver también los misterios de su propio corazón. La obra en palabras de su autor: "Para descubrirse, a sí mismo, Bastián debe primero abandonar el mundo real (donde nada tiene sentido) y penetrar en el país de lo fantástico, en el que, por el contrario, todo está cargado de significado. Sin embargo, hay siempre un riesgo cuando se realiza tal periplo; entre la realidad y lo fantástico existe, en efecto, un sutil equilibrio que no debe perturbarse: separado de lo real, lo fantástico pierde también su contenido." - Michael Ende
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ReseñasMisterio">
+                <h1 id="Misterio">Reseñas de Misterio</h1>
+                <div class="ContenedorBaskerville">
+                    <div class="imagenBaskerville">
+                        <a href="https://www.amazon.com.mx/sabueso-Baskerville-Arthur-Conan-Doyle/dp/8446041324"><img src="https://m.media-amazon.com/images/I/71Ezib27q4L._SY385_.jpg" alt="Portada del libro El Sabueso de los Baskerville, se observan al sabueso y sus posibles víctimas"></a>
+                    </div>
+                    <div class="TituloBaskerville">
+                        <h1>El Sabueso de los Baskerville , Sir Arthur Conan Doyle</h1>
+                    </div>
+                    <div class="TextoBaskerville">
+                        <p>
+                            Sobre la familia Baskerville pesa una terrible maldición: cuando a uno de sus miembros se le acerca la muerte, un endemoniado perro se le aparece. Y esto es lo que le parece haber ocurrido a sir Charles, el último Baskerville, cuya temprana muerte ha estado estado precedida por unos amenazantes aullidos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ContenedorCuchillo">
+                    <div class="imagenCuchillo">
+                        <a href="https://www.amazon.com.mx/Cuchillo-El-Patricia-Highsmith/dp/8433978195/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2Z9RMN21MMOJ6&keywords=el+cuchillo+patricia+highsmith&qid=1696814416&s=books&sprefix=el+cuchillo+patricia+highsmith%2Cstripbooks%2C132&sr=1-1&ufe=app_do%3Aamzn1.fos.4e545b5e-1d45-498b-8193-a253464ffa47"><img src="https://m.media-amazon.com/images/I/81YqfT82DuL._SY385_.jpg" alt="Portada del libro El Cuchillo, se observa una estación de autobuses y un crímen"></a>
+                    </div>
+                    <div class="TituloCuchillo">
+                        <h1>El Cuchillo , Patricia Highsmith</h1>
+                    </div>
+                    <div class="TextoCuchillo">
+                        <p>
+                            ¿Por qué está Walter Stackhouse tan fascinado por el asesinato de Helen Kimmel? Ha recortado el artículo del periódico sobre el crimen, piensa visitar al marido de la víctima y puede que hasta escriba un ensayo sobre el hecho. ¿Qué le seduce en la violenta muerte de una respetable mujer de clase media? ¿Tal vez la posibilidad de que sea su marido el asesino? Walter es un joven y prometedor abogado; está más o menos felizmente casado con Clara, la mujer que ama, y viven en una hermosa casa de una zona residencial. ¿Una vida perfecta para la pareja ideal? Quizá, si no fuera porque Clara se las ha arreglado para separarle de casi todos sus amigos, y a veces parece amar más a su perro que a su marido... ¿Y si Mrs. Kimmel era una mujer como Clara? ¿Por qué no ir a visitar a su marido, el hipotético asesino? Aunque tal vez la pregunta que Walter debiera hacerse sea: ¿por qué no mirarse en el espejo de sus deseos más ocultos? ¿Por qué no matar a Clara?
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ReseñasSciFi">
+                <h1 id="SciFi">Reseñas de Ciencia Ficción</h1>
+                <div class="ContenedorMarcianas">
+                    <div class="imagenMarcianas">
+                        <a href="https://www.amazon.com.mx/Cr%C3%B3nicas-marcianas-Ray-Bradbury/dp/6070761545/ref=sr_1_2?crid=25IV16BHVR6TE&keywords=cronicas+marcianas+ray+bradbury&qid=1696814790&s=books&sprefix=cronicas+marcia%2Cstripbooks%2C121&sr=1-2"><img src="https://m.media-amazon.com/images/I/71ridEz3CoL._SY425_.jpg" alt="Portada del libro Crónicas Marcianas, se observa un cohete y una granja en un paisaje galáctico"></a>
+                    </div>
+                    <div class="TituloMarcianas">
+                        <h1>Crónicas Marcianas, Ray Bradbury</h1>
+                    </div>
+                    <div class="TextoMarcianas">
+                        <p>
+                            Recopilación de relatos que recogen la crónica de la colonización de Marte por parte de una humanidad que huye de un mundo al borde de la destrucción. Los colonos llevan consigo sus deseos más íntimos y el sueño de reproducir en el Planeta Rojo una civilización de perritos calientes, cómodos sofás y limonada en el porche al atardecer. Pero su equipaje incluye también los miedos ancestrales, que se traducen en odio a lo diferente, y las enfermedades que diezmarán a los marcianos. Conforme a su concepción de lo que debe ser la ciencia ficción, Bradbury se traslada al futuro para iluminar el presente y explorar la naturaleza humana.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ContenedorCriada">
+                    <div class="imagenCriada">
+                        <a href="https://www.amazon.com.mx/El-cuento-criada-Margaret-Atwood/dp/8416131538"><img src="https://m.media-amazon.com/images/I/71NooyZwM4L._SY385_.jpg" alt="Portada del libro El Cuento de la Criada, se observa a OfFred con su uniforme rojo, rodeada de un fondo negro"></a>
+                    </div>
+                    <div class="TituloCriada">
+                        <h1>El Cuento de la Criada, Margaret Atwood</h1>
+                    </div>
+                    <div class="TextoCriada">
+                        <p>
+                            El libro de cabecera de una nueva generación. Amparándose en la coartada del terrorismo islámico, unos políticos teócratas se hacen con el poder y, como primera medida, suprimen la libertad de prensa y los derechos de las mujeres. Esta trama, inquietante y oscura, que bien podría encontrarse en cualquier obra actual, pertenece en realidad a esta novela escrita por Margaret Atwood a principios de los ochenta, en la que la afamada autora canadiense anticipó con llamativa premonición una amenaza latente en el mundo de hoy. P en la República de Gilead, el cuerpo de Defred sólo sirve para procrear, tal como imponen las férreas normas establecidas por la dictadura puritana que domina el país. Si Defred se rebela -o si, aceptando colaborar a regañadientes, no es capaz de concebir- le espera la muerte en ejecución pública o el destierro a unas Colonias en las que sucumbirá a la polución de los residuos tóxicos. Así, el régimen controla con mano de hierro hasta los más ínfimos detalles de la vida de las mujeres: su alimentación, su indumentaria, incluso su actividad sexual. Pero nadie, ni siquiera un gobierno despótico parapetado tras el supuesto mandato de un dios todopoderoso, puede gobernar el pensamiento de una persona. Y mucho menos su deseo. P Los peligros inherentes a mezclar religión y política el empeño de todo poder absoluto en someter a las mujeres como paso conducente a sojuzgar a toda la población la fuerza incontenible del deseo como elemento transgresor: son tan sólo una muestra de los temas que aborda este relato desgarrador, aderezado con el sutil sarcasmo que constituye la seña de identidad de Margaret Atwood. Una escritora universal que, con el paso del tiempo, no deja de asombrarnos con la lucidez de sus ideas y la potencia de su prosa.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ReseñasTeatro">
+                <h1 id="Teatro">Reseñas de Teatro</h1>
+                <div class="ContenedorBernarda">
+                    <div class="imagenBernarda">
+                        <a href="https://www.amazon.com.mx/Casa-Bernarda-Federico-Garcia-Lorca/dp/1981495185"><img src="https://m.media-amazon.com/images/I/71rMTRI3xSL._SY385_.jpg" alt="Portada del libro La Casa de Bernanda Alba, se observan a los personajes principales de esta obra"></a>
+                    </div>
+                    <div class="TituloBernarda">
+                        <h1>La Casa de Bernarda Alba, Federico García Lorca</h1>
+                    </div>
+                    <div class="TextoBernarda">
+                        <p>
+                            La casa de Bernarda Alba es una obra teatral en tres actos del autor Federico Garcia Lorca que fue escrita en 1936. La obra cuenta la historia de Bernarda Alba, que tras haber enviudado por segunda vez a los 60 anos, decide vivir los siguientes ocho anos en el mas riguroso luto. En la obra destacan rasgos de la 'Espana profunda' de principios del siglo XX caracterizada por una sociedad tradicional muy violenta en la que el papel que la mujer juega es secundario. Otros rasgos destacados son el fanatismo religioso y el miedo a descubrir la intimidad. Con Bernarda viven sus cinco hijas (Angustias, Magdalena, Amelia, Martirio y Adela), su madre y sus dos criadas. Entre estas ultimas se encuentra Poncia, una criada que ha vivido muchos anos al servicio de la anciana. Sin personajes masculinos en escena; el nombre de las mujeres de la obra es simbolico.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ContenedorOtelo">
+                    <div class="imagenOtelo">
+                        <a href="https://www.amazon.com.mx/Otelo-Tragedia-cl%C3%A1sica-William-Shakespeare-ebook/dp/B00JF6JXOO/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1696816277&sr=1-1"><img src="https://m.media-amazon.com/images/I/91Xn0piuCHL._SY385_.jpg" alt="Portada del libro Otelo, se observa a los personajes principales en modo conspiración"></a>
+                    </div>
+                    <div class="TituloOtelo">
+                        <h1>Otelo, William Shakespeare</h1>
+                    </div>
+                    <div class="TextoOtelo">
+                        <p>
+                            Otelo: el moro de Venecia es una obra teatral de Shakespeare escrita alrededor de 1603. Otelo es un príncipe negro, orgulloso de su éxito como general al servicio de Venecia, cuya sociedad lo aprecia gracias a sus méritos militares, y que ha conquistado la mano y el amor de Desdémona, hija de un notable. Yago, un alférez, envidioso y maquiavélico, convierte a Otelo en blanco de su resentimiento. Sus calumnias, dirigidas contra el punto vulnerable del moro -su matrimonio interracial- resultan eficaces. Persuadido de la infidelidad de Desdémona, corroído por los celos, despojado de toda confianza en sí mismo, Otelo cae en la trampa de su propia caída, convirtiendo la obra en la doméstica de todas las tragedias de Shakespeare: el sangriento final de un matrimonio. William Shakespeare (1564 – 1616) fue un dramaturgo, poeta y actor inglés. Conocido en ocasiones como el Bardo de Avon (o simplemente El Bardo), Shakespeare es considerado el escritor más importante en lengua inglesa y uno de los más célebres de la literatura universal. Sus obras de teatro son consideradas auténticos clásicos atemporales y su influencia a lo largo de la historia de la literatura es indiscutible.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="foot-up">
+            <ul class="Opciones-foot">
+                <li>
+                    <h3 id="BiblioEditores">BiblioEditores</h3>
+                    <p>Somos un conjunto de amantes de los libros que buscan compartir sus obras favoritas</p>
+                </li>
+                <li>
+                    <h3>Contacto</h3>
+                    <a href="https://www.instagram.com/tha.banshee/">Instagram</a>
+                </li>
+                <li>
+                    <h3>Deja tu opinión</h3>
+                    <input type="text">
+                    <input type="submit" value="Enviar">
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>

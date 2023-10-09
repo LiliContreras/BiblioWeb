@@ -1,0 +1,838 @@
+body {
+    margin:0;
+    padding: 0;
+    font-size: 15px;
+}
+
+
+/*HEADER*/
+header {
+    /* width - ancho /// height-alto */
+    width: 100%;
+    height: 80px;
+    background-color: #f58549;
+}
+
+header nav {
+    text-align:center;
+    display: flex;
+}
+
+header nav .logo-name {
+    /* width - ancho /// height-alto y el valor auto = altura automática*/
+    width: 350px;
+    height: auto;
+    /* Eliminar puntitos */
+    list-style:none;
+    display: flex;
+    /* Justificar al centro // de acorde al elemento */
+    justify-content:flex-start;
+    /* Centrando verticalmente*/
+    align-items:center;
+}
+
+header nav .logo-name img{
+    width: 50px;
+    margin-right: 20px;
+    align-items:normal;
+}
+
+header nav .logo-name p{
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav .menu {
+    /* width - ancho /// height-alto y el valor auto = altura automática*/
+    width: 550px;
+    height: auto;
+    /* Eliminar puntitos */
+    list-style:none;
+    display: flex;
+    /* Justificar al centro // de acorde al elemento */
+    justify-content:flex-end;
+    /* Centrando verticalmente*/
+    align-items:center;
+}
+
+header nav .menu a{
+    font-size: 18px;
+    color: black;
+    margin-right: 30px;
+    align-items:flex-start;
+}
+
+header nav .menu a:hover{
+    text-decoration: underline;
+}
+
+header nav .main-menu {
+    text-align:center;
+    display: flex;
+}
+
+/*RECOMENDACIONES*/
+h1{
+    text-align: center;
+}
+
+main .Recomendaciones .Opciones .Libros {
+    /* width - ancho /// height-alto y el valor auto = altura automática*/
+    width: 90%;
+    height: 300px;
+    /* Eliminar puntitos */
+    list-style:none;
+    display: flex;
+    /* Justificar al centro // de acorde al elemento */
+    justify-content:center;
+    /* Centrando verticalmente*/
+    align-items:center;
+    background-color: #eec170;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+main .Recomendaciones .Opciones .Libros img{
+    width: 160px;
+    margin-right: 50px;
+}
+
+main .Recomendaciones .Opciones .Libros img:hover{
+    border-color: #dfe1e500;
+    /*  0 -> desplazamiento horizontal //
+        1px -> desplazamiento vertical //
+        6px -> desenfoque //
+        0 -> expansión de la sombra    */
+    box-shadow: 1px 2px 6px 2px #20212447;
+}
+
+/*RECOMENDACIONES*/
+main .Categorias .Disponibles .Reseñas {
+    /* width - ancho /// height-alto y el valor auto = altura automática*/
+    width: 90%;
+    height: 300px;
+    /* Eliminar puntitos */
+    list-style:none;
+    display: flex;
+    /* Justificar al centro // de acorde al elemento */
+    justify-content:space-around;
+    /* Centrando verticalmente*/
+    align-items:center;
+    background-color: #eec170;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+/*TERROR*/
+.ContenedorTerror {
+    position: relative;
+    width: 160px;
+}
+
+.Terrorimg{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 10%;
+}
+
+.middleTerror{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ContenedorTerror:hover .Terrorimg{
+    opacity: 0.3;
+}
+
+.ContenedorTerror:hover .middleTerror{
+    opacity: 1;
+}
+
+.textTerror {
+    background-color: #f2a65a;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+
+/*FANTASIA*/
+.ContenedorFantasia {
+    position: relative;
+    width: 160px;
+}
+
+.Fantasiaimg{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 10%;
+}
+
+.middleFantasia{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ContenedorFantasia:hover .Fantasiaimg{
+    opacity: 0.3;
+}
+
+.ContenedorFantasia:hover .middleFantasia{
+    opacity: 1;
+}
+
+.textFantasia {
+    background-color: #f2a65a;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}  
+
+/*MISTERIO*/
+.ContenedorMisterio {
+    position: relative;
+    width: 160px;
+}
+
+.Misterioimg{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 10%;
+}
+
+.middleMisterio{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ContenedorMisterio:hover .Misterioimg{
+    opacity: 0.3;
+}
+
+.ContenedorMisterio:hover .middleMisterio{
+    opacity: 1;
+}
+
+.textMisterio {
+    background-color: #f2a65a;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}  
+
+/*SCIFI*/
+.ContenedorSciFi {
+    position: relative;
+    width: 160px;
+}
+
+.SciFiimg{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 10%;
+}
+
+.middleSciFi{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ContenedorSciFi:hover .SciFiimg{
+    opacity: 0.3;
+}
+
+.ContenedorSciFi:hover .middleSciFi{
+    opacity: 1;
+}
+
+.textSciFi {
+    background-color: #f2a65a;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/*TEATRO*/
+.ContenedorTeatro {
+    position: relative;
+    width: 160px;
+}
+
+.Teatroimg{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 10%;
+}
+
+.middleTeatro{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ContenedorTeatro:hover .Teatroimg{
+    opacity: 0.3;
+}
+
+.ContenedorTeatro:hover .middleTeatro{
+    opacity: 1;
+}
+
+.textTeatro {
+    background-color: #f2a65a;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/*FRASE DEL MES*/
+main .Frase .Frase-mes p{
+    font-size:30px ;
+    width: 90%;
+    text-align: center;
+    font-family:fantasy;
+    background-color: #eec170;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+/*RESEÑAS DE TERROR*/
+main .Reseñas .ReseñasTerror h1{
+    font-size: 23px;
+}
+
+/*MONJE*/
+.ContenedorMonje {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 2px;
+    margin-left: 60px;
+    margin-right: 60px;
+   }
+   
+.imagenMonje img{
+    width: 190px;
+    border-radius: 15%;
+    padding: 20px;
+}
+
+.imagenMonje{
+    margin-left: 80px;
+}
+
+.imagenMonje img:hover{
+    border-color: #dfe1e500;
+    /*  0 -> desplazamiento horizontal //
+        1px -> desplazamiento vertical //
+        6px -> desenfoque //
+        0 -> expansión de la sombra    */
+    box-shadow: 1px 2px 6px 2px #20212447;
+}
+
+.TituloMonje{
+    width: 100px;
+    margin-left: 30px;
+}
+   
+.TextoMonje{
+    width: 500px;
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 140px;
+    justify-content: space-around;
+}
+
+/*FRANKENSTEIN*/
+.ContenedorFrankenstein {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+   }
+   
+.imagenFrankenstein img{
+    width: 190px;
+    border-radius: 15%;
+    padding: 20px;
+}
+
+.imagenFrankenstein{
+    margin-left: 80px;
+}
+
+.imagenFrankenstein img:hover{
+    border-color: #dfe1e500;
+    /*  0 -> desplazamiento horizontal //
+        1px -> desplazamiento vertical //
+        6px -> desenfoque //
+        0 -> expansión de la sombra    */
+    box-shadow: 1px 2px 6px 2px #20212447;
+}
+
+.TituloFranskenstein{
+    width: 30px;
+    margin-left: 10px;
+    
+}
+   
+.TextoFrankenstein{
+    width: 500px;
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 140px;
+    justify-content: space-around;
+}
+
+/*RESEÑAS FANTASIA*/
+main .Reseñas .ReseñasFantasia h1{
+    font-size: 23px;
+}
+
+/*HOBBIT*/
+.ContenedorHobbit {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+   }
+   
+.imagenHobbit img{
+    width: 190px;
+    border-radius: 15%;
+    padding: 20px;
+}
+
+.imagenHobbit{
+    margin-left: 80px;
+}
+
+.imagenHobbit img:hover{
+    border-color: #dfe1e500;
+    /*  0 -> desplazamiento horizontal //
+        1px -> desplazamiento vertical //
+        6px -> desenfoque //
+        0 -> expansión de la sombra    */
+    box-shadow: 1px 2px 6px 2px #20212447;
+}
+
+.TituloHobbit{
+    width: 30px;
+    margin-left: 10px;
+    
+}
+   
+.TextoHobbit{
+    width: 500px;
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 140px;
+    justify-content: space-around;
+}
+
+/*LA HISTORIA INTERMINABLE*/
+.ContenedorSinFin {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+   }
+   
+.imagenSinFin img{
+    width: 190px;
+    border-radius: 15%;
+    padding: 20px;
+}
+
+.imagenSinFin{
+    margin-left: 80px;
+}
+
+.imagenSinFin img:hover{
+    border-color: #dfe1e500;
+    /*  0 -> desplazamiento horizontal //
+        1px -> desplazamiento vertical //
+        6px -> desenfoque //
+        0 -> expansión de la sombra    */
+    box-shadow: 1px 2px 6px 2px #20212447;
+}
+
+.TituloSinFin{
+    width: 40px;
+    margin-left: 10px;
+    
+}
+   
+.TextoSinFin{
+    width: 500px;
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 140px;
+    justify-content: space-around;
+}
+
+/*reseñas MISTERIO*/
+main .Reseñas .ReseñasMisterio h1{
+    font-size: 23px;
+}
+
+/*EL SABUESO DE LOS BASKERVILLE*/
+.ContenedorBaskerville {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+   }
+   
+.imagenBaskerville img{
+    width: 190px;
+    border-radius: 15%;
+    padding: 20px;
+}
+
+.imagenBaskerville{
+    margin-left: 80px;
+}
+
+.imagenBaskerville img:hover{
+    border-color: #dfe1e500;
+    /*  0 -> desplazamiento horizontal //
+        1px -> desplazamiento vertical //
+        6px -> desenfoque //
+        0 -> expansión de la sombra    */
+    box-shadow: 1px 2px 6px 2px #20212447;
+}
+
+.TituloBaskerville{
+    width: 250px;
+    margin-left: 10px;
+    
+}
+   
+.TextoBaskerville{
+    width: 300px;
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 140px;
+    justify-content: space-around;
+}
+
+/*EL CUCHILLO*/
+.ContenedorCuchillo {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+   }
+   
+.imagenCuchillo img{
+    width: 190px;
+    border-radius: 15%;
+    padding: 20px;
+}
+
+.imagenCuchillo{
+    margin-left: 80px;
+}
+
+.imagenCuchillo img:hover{
+    border-color: #dfe1e500;
+    /*  0 -> desplazamiento horizontal //
+        1px -> desplazamiento vertical //
+        6px -> desenfoque //
+        0 -> expansión de la sombra    */
+    box-shadow: 1px 2px 6px 2px #20212447;
+}
+
+.TituloCuchillo{
+    width: 250px;
+    margin-left: 10px;
+    
+}
+   
+.TextoCuchillo{
+    width: 300px;
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 140px;
+    justify-content: space-around;
+}
+
+/*RESEÑAS SCIFI*/
+main .Reseñas .ReseñasSciFi h1{
+    font-size: 23px;
+}
+
+/*Crónicas Marcianas*/
+.ContenedorMarcianas {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+   }
+   
+.imagenMarcianas img{
+    width: 190px;
+    border-radius: 15%;
+    padding: 20px;
+}
+
+.imagenMarcianas{
+    margin-left: 80px;
+}
+
+.imagenMarcianas img:hover{
+    border-color: #dfe1e500;
+    /*  0 -> desplazamiento horizontal //
+        1px -> desplazamiento vertical //
+        6px -> desenfoque //
+        0 -> expansión de la sombra    */
+    box-shadow: 1px 2px 6px 2px #20212447;
+}
+
+.TituloMarcianas{
+    width: 40px;
+    margin-left: 10px;
+    
+}
+   
+.TextoMarcianas{
+    width: 500px;
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 140px;
+    justify-content: space-around;
+}
+
+/*EL CUENTO DE LA CRIADA*/
+.ContenedorCriada {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+   }
+   
+.imagenCriada img{
+    width: 190px;
+    border-radius: 15%;
+    padding: 20px;
+}
+
+.imagenCriada{
+    margin-left: 80px;
+}
+
+.imagenCriada img:hover{
+    border-color: #dfe1e500;
+    /*  0 -> desplazamiento horizontal //
+        1px -> desplazamiento vertical //
+        6px -> desenfoque //
+        0 -> expansión de la sombra    */
+    box-shadow: 1px 2px 6px 2px #20212447;
+}
+
+.TituloCriada{
+    width: 40px;
+    margin-left: 10px;
+    
+}
+   
+.TextoCriada{
+    width: 500px;
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 140px;
+    justify-content: space-around;
+}
+
+/*RESEÑAS TEATRO*/
+main .Reseñas .ReseñasTeatro h1{
+    font-size: 23px;
+}
+
+/*CASA DE BERNANDA ALBA*/
+.ContenedorBernarda {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+   }
+   
+.imagenBernarda img{
+    width: 190px;
+    border-radius: 15%;
+    padding: 20px;
+}
+
+.imagenBernarda{
+    margin-left: 80px;
+}
+
+.imagenBernarda img:hover{
+    border-color: #dfe1e500;
+    /*  0 -> desplazamiento horizontal //
+        1px -> desplazamiento vertical //
+        6px -> desenfoque //
+        0 -> expansión de la sombra    */
+    box-shadow: 1px 2px 6px 2px #20212447;
+}
+
+.TituloBernarda{
+    width: 40px;
+    margin-left: 10px;
+    
+}
+   
+.TextoBernarda{
+    width: 500px;
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 140px;
+    justify-content: space-around;
+}
+
+/*OTELO*/
+.ContenedorOtelo {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+   }
+   
+.imagenOtelo img{
+    width: 190px;
+    border-radius: 15%;
+    padding: 20px;
+}
+
+.imagenOtelo{
+    margin-left: 80px;
+}
+
+.imagenOtelo img:hover{
+    border-color: #dfe1e500;
+    /*  0 -> desplazamiento horizontal //
+        1px -> desplazamiento vertical //
+        6px -> desenfoque //
+        0 -> expansión de la sombra    */
+    box-shadow: 1px 2px 6px 2px #20212447;
+}
+
+.TituloOtelo{
+    width: 40px;
+    margin-left: 10px;
+    
+}
+   
+.TextoOtelo{
+    width: 500px;
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 140px;
+    justify-content: space-around;
+}
+
+/*FOOTER*/
+
+footer .foot-up .Opciones-foot {
+    /* width - ancho /// height-alto y el valor auto = altura automática*/
+    width: 100%;
+    height: 100px;
+    /* Eliminar puntitos */
+    list-style:none;
+    display: flex;
+    /* Justificar al centro // de acorde al elemento */
+    justify-content:space-around;
+    /* Centrando verticalmente*/
+    align-items:center;
+    background-color: #eec170;
+}
+
+footer .foot-up .Opciones-foot a{
+    text-decoration: none;
+    color: black;
+}
+
+footer .foot-up .Opciones-foot a:hover{
+    text-decoration: underline;
+}
+
+footer .foot-up .Opciones-foot input:hover{
+    border-color: #dfe1e500;
+    /*  0 -> desplazamiento horizontal //
+        1px -> desplazamiento vertical //
+        6px -> desenfoque //
+        0 -> expansión de la sombra    */
+    box-shadow: 1px 2px 6px 2px #20212447;
+}
